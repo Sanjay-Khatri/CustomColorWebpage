@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<script src="jquery-3.3.1.slim.min.js"></script>
+<script src="bootstrap.bundle.min.js" ></script>
+<link rel="stylesheet" href="bootstrap.min.css"></link>
+<link rel="stylesheet" href="mystyle.css"></link>
+<script type="text/javascript" src="myscript.js"></script>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-custom navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span>CustomColor</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <form class="form-inline" id="searcher" method="get" action="#" >
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Search" name="query">
+              <div class="input-group-append" >
+                <a class="input-group-text" id="footer-color" href="#">Search</a>
+              </div>
+            </div>
+          </form>
+          <ul class="navbar-nav  mr-auto px-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Account</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link" href="#">Browse Idea</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+          <div class="ml-auto ">
+            <a class="btn navbar-btn button-width font-weight-bold" href="#">Login</a>
+            <a class="btn  button-width" href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container mt-5">
+      <div class="row">
+
+        <div class="col-md-4">
+          <br>
+          <br>
+          <center><h1>HEADER</h1>
+            <br>
+            <h2 >RED: <span id='redvalue'>145</span></h2>
+            <input type="range" min="0" max="255" id="red" value="145" oninput="myfunctionrgb()">
+            <br>
+            <br>
+            <h2>GREEN: <span id='greenvalue'>25</span></h2>
+            <input type="range" min="0" max="255" id="green" value="25" oninput="myfunctionrgb()">
+            <br>
+            <br>
+            <h2>BLUE: <span id='bluevalue'>255</span></h2>
+            <input type="range" min="0" max="255" id="blue" value="255" oninput="myfunctionrgb()">
+          </center>
+        </div>
+
+
+        <div class="col-md-4">
+          <br>
+          <br>
+          <center><h1>FONT</h1>
+            <br>
+            <h2 >RED: <span id='fontredvalue'>255</span></h2>
+            <input type="range" min="0" max="255" id="fontred" value="255" oninput="myfunctionfont()">
+            <br>
+            <br>
+            <h2>GREEN: <span id='fontgreenvalue'>255</span></h2>
+            <input type="range" min="0" max="255" id="fontgreen" value="255" oninput="myfunctionfont()">
+            <br>
+            <br>
+            <h2>BLUE: <span id='fontbluevalue'>255</span></h2>
+            <input type="range" min="0" max="255" id="fontblue" value="255" oninput="myfunctionfont()">
+          </center>
+        </div>
+
+
+        <div class="col-md-4">
+          <br>
+          <br>
+          <center><h1>FOOTER</h1>
+            <br>
+            <h2 >RED: <span id='footerredvalue'>0</span></h2>
+            <input type="range" min="0" max="255" id="fred" value="0" oninput="myfunctionfooter()">
+            <br>
+            <br>
+            <h2>GREEN: <span id='footergreenvalue'>124</span></h2>
+            <input type="range" min="0" max="255" id="fgreen" value="124" oninput="myfunctionfooter()">
+            <br>
+            <br>
+            <h2>BLUE: <span id='footerbluevalue'>100</span></h2>
+            <input type="range" min="0" max="255" id="fblue" value="100" oninput="myfunctionfooter()">
+          </center>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="footer fixed-bottom pt-3" id='footer'>
+    <div class="row font-weight-bold">
+      <div class="col-md-3">
+        <a class="" href="#"><center>Contact Us</center></a>
+      </div>
+      <div class="col-md-3">
+        <a class="" href="#"><center>FAQ</center></a>
+      </div>
+      <div class="col-md-3">
+        <a class="d"class="text-muted" href="#"><center>Terms of Use</center></a>
+      </div>
+      <div class="col-md-3">
+        <a class="" href="#"><center>Privacy policy</center></a>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col pb-3" id="disclaimer">
+        <center>Copyright &copy; product. This site is a legal asset of CustomColor Corp. any usage without aknowledge tends to legal action.</center>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
